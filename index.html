@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container" style="border-bottom: 500px">
+    <div class="alert alert-success my-2" id="Mang">Mảng: </div>
+    <h3 class="alert alert-primary">Nhập vào số nguyên n </h3>
+    <input class="form-control w-50 my-2" type="number" id="nhapSo">
+    <button class="btn btn-primary my-2" id="btnNhapSo"> Nhập số nguyên</button>
+    <hr>
+    <!-- Câu 1 -->
+    <h4>1/ Tính tổng các số nguyên dương</h4>
+    <button class="btn btn-success my-2" id="tinhTong">Tính tổng các số nguyên dương</button>
+
+    <div class="alert alert-primary" id="ketQua_1"></div>
+    <hr>
+    <!-- Câu 2 -->
+    <h4>2/ Đếm có bao nhiêu số nguyên dương trong mảng</h4>
+    <button class="btn btn-success my-2" id="btnDem">Đếm các số nguyên dương</button>
+    <div class="alert alert-primary" id="ketQua_2"></div>
+    <hr>
+    <!-- Câu 3 -->
+    <h4>3/ Tìm số nhỏ nhất trong mảng</h4>
+    <button class="btn btn-success my-2" id="btnTimso">tìm số nhỏ nhất</button>
+    <div class="alert alert-primary" id="ketQua_3"></div>
+
+    <hr>
+    <!-- Câu 4 -->
+    <h4>4/ Tìm số dương nhỏ nhất trong mảng.</h4>
+    <button class="btn btn-success my-2" id="btnMinDuong">tìm số dương nhỏ nhất</button>
+    <div class="alert alert-primary" id="ketQua_4"></div>
+
+    <hr>
+    <!-- Câu 5 -->
+    <h4>5/ Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1.</h4>
+    <button class="btn btn-success my-2" id="btnSochan">Số chẵn cuối cùng</button>
+    <div class="alert alert-primary" id="ketQua_5"></div>
+    <hr>
+
+    <!-- Câu 6 -->
+    <h4> 6/ Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</h4>
+    <p> Nhập vào 2 vị trí muốn đổi chỗ giá trị </p>
+    <input type="number" id="viTri1" placeholder="Nhập số vị trí 1">
+    <input type="number" id="viTri2" placeholder="Nhập số vị trí 1">
+    <button class="btn btn-success my-2" id="btnDoiGiaTri"> Đổi giá trị của 2 vị trí </button>
+    <div class="alert alert-primary" id="ketQua_6"></div>
+    <hr>
+    <!-- Câu 7 -->
+    <h4> 7/ Xếp mảng theo thứ tự tăng dần</h4>
+    <button class="btn btn-success my-2" id="btnXepMang"> Xếp mảng theo thứ tự tăng dần </button>
+    <div class="alert alert-primary" id="ketQua_7"></div>
+    <hr>
+    <!-- Câu 8 -->
+    <h4>8/ Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về  -1.
+    </h4>
+    <button class="btn btn-success my-2" id="btnSoNguyento"> Tìm số nguyên tố </button>
+    <div class="alert alert-primary" id="ketQua_8"></div>
+    <hr>
+
+    <!-- câu 9  -->
+    <h4>Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</h4>
+    <div class="alert alert-success my-2" id="Mang2">Mảng số thực:  </div>
+    <h3 class="alert alert-primary">Thêm vào số thực n </h3>
+    <input class="form-control w-50 my-2" type="number" id="nhapSothuc">
+    <button class="btn btn-primary my-2" id="btnNhapSoThuc"> Nhập số thực vào mảng</button>
+
+    <button class="btn btn-success my-2" id="btnSoNguyen"> Tìm số nguyên</button>
+    <div class="alert alert-primary" id="ketQua_9"></div>
+    <hr>
+    <!-- câu 10 -->
+
+    <h4>10/ So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.
+    </h4>
+    <button class="btn btn-success my-2" id="btnSoSanh"> So sánh </button>
+    <div class="alert alert-primary" id="ketQua_10"></div>
+
+
+
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
